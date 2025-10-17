@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School System Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">School System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#subjects">Subjects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Carousel -->
+  <section id="home" class="mt-5 pt-5">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" class="d-block w-100" alt="School">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to Our School</h2>
+            <p>Empowering students for a brighter future.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://plus.unsplash.com/premium_photo-1661333596510-33d60b54ad80?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3R1ZHlpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500" class="d-block w-100" alt="Students">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Quality Education</h2>
+            <p>Where learning meets excellence.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Admission Section -->
+  <section id="admission">
+    <div class="container">
+      <h2 class="text-center mb-4">Admission Form</h2>
+      <form id="admissionForm" class="p-4 border rounded bg-light">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Grade Level Applying For</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section id="faculty" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Faculty</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Teacher">
+            <div class="card-body">
+              <h5 class="card-title">Ms. Sarah Johnson</h5>
+              <p class="card-text"><strong>Subjects:</strong> English, Literature</p>
+              <p class="card-text">Passionate about nurturing creativity and communication skills in students.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQHeKa70fHKq5Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693465492744?e=2147483647&v=beta&t=i9ouuwCe0qXlH52iRLEzVGNTl3fju9J9_pOuw91wijM" class="card-img-top" alt="Teacher">
+            <div class="card-body">
+              <h5 class="card-title">Mr. David Lee</h5>
+              <p class="card-text"><strong>Subjects:</strong> Mathematics</p>
+              <p class="card-text">Believes in learning through problem-solving and logical reasoning.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/e9/88/ff/e988ffa329dfb3227942ff964bcace6f.jpg" class="card-img-top" alt="Teacher">
+            <div class="card-body">
+              <h5 class="card-title">Mrs. Emily Brown</h5>
+              <p class="card-text"><strong>Subjects:</strong> Science</p>
+              <p class="card-text">Encourages curiosity and hands-on experiments in learning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section id="vision">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Vision</h2>
+      <div class="vision mx-auto text-center">
+        <p>
+          Our vision is to inspire and empower every student to reach their full potential through
+          excellence in education, innovation, and community values. We aim to create lifelong learners
+          who will contribute positively to society.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subjects Offered -->
+  <section id="subjects" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Subjects Offered</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered text-center">
+          <thead class="table-primary">
+            <tr>
+              <th>Subject</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mathematics</td>
+              <td>Develops analytical and problem-solving skills.</td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>Encourages exploration and understanding of natural phenomena.</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Focuses on communication, comprehension, and creative writing.</td>
+            </tr>
+            <tr>
+              <td>Social Studies</td>
+              <td>Promotes awareness of history, geography, and cultures.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact us: school@example.com | +91 9876543210</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="mt-2 mb-0">© 2025 School System Website</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+</body>
+</html>
