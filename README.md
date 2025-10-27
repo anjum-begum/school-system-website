@@ -17,7 +17,6 @@ This project is created for the **MERN Stack Development Internship Task** using
 - Bootstrap 5
 - Font Awesome
 
-https://anjum-begum.github.io/school-system-website/
 
 ## 🔹 How to Run
 1. Clone the repository:
